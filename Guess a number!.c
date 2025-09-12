@@ -1,30 +1,30 @@
-#define _CRT_SECURE_NO_WARNINGS//±ÜÃâscanfµÈº¯Êı³öÏÖ°²È«¾¯¸æ.Õâ¸öºê¶¨ÒåÓ¦¸Ã·ÅÔÚ¶¥ÉÏ¡£
+#define _CRT_SECURE_NO_WARNINGS//é¿å…scanfç­‰å‡½æ•°å‡ºç°å®‰å…¨è­¦å‘Š.è¿™ä¸ªå®å®šä¹‰åº”è¯¥æ”¾åœ¨é¡¶ä¸Šã€‚
 #include <stdio.h>
-#include <stdlib.h>//µ÷ÓÃrandºÍsrand
-#include <time.h>//µ÷ÓÃtime
+#include <stdlib.h>//è°ƒç”¨randå’Œsrand
+#include <time.h>//è°ƒç”¨time
 
 void game()
 {
 
 	int ans = rand() % 100 + 1;
-	printf("ÓÎÏ·¿ªÊ¼£¬1µ½100ÀïÃæ²ÂÒ»¸öÊı×Ö\n");
-	int guess = 0;//ÓÃ»§²ÂµÄÊı×Ö
+	printf("æ¸¸æˆå¼€å§‹ï¼Œ1åˆ°100é‡Œé¢çŒœä¸€ä¸ªæ•°å­—\n");
+	int guess = 0;//ç”¨æˆ·çŒœçš„æ•°å­—
 	scanf("%d", &guess);
 	while (1)
 	{
 		if (guess > ans)
 		{
-			printf("²Â´óÁË\n");
+			printf("çŒœå¤§äº†\n");
 			scanf("%d", &guess);
 		}
 		if (guess < ans)
 		{
-			printf("²ÂĞ¡ÁË\n");
+			printf("çŒœå°äº†\n");
 			scanf("%d", &guess);
 		}
 		if (guess == ans)
 		{
-			printf("¹§Ï²Äã£¬²Â¶ÔÁË\n");
+			printf("æ­å–œä½ ï¼ŒçŒœå¯¹äº†\n");
 			break;
 		}
 	}
@@ -35,12 +35,12 @@ void menu()
 	printf("*******1.Start *******\n");
 	printf("*******0. Exit *******\n");
 	printf("**********************\n");
-	printf("ÊäÈë¶ÔÓ¦Êı×ÖÒÔ¿ªÊ¼²Ù×÷\n");
+	printf("è¾“å…¥å¯¹åº”æ•°å­—ä»¥å¼€å§‹æ“ä½œ\n");
 }
 int main()
 {
-	srand((unsigned int)time(NULL));//srandÊÇËæ»úÊıÖÖ×Ó£¬½ÓÊÜunsigned int¡£µ¥µ¥µÄrandÆäËæ»úÊıµÄĞòÁĞÊÇ¹Ì¶¨µÄ£¬ÓÃÊ±¼äµÄ±ä»¯À´×÷ÎªËæ»úÊıÖÖ×Ó.·ÀÖ÷º¯ÊıÀïÊÇÎªÁË·ÀÖ¹ËüÃ¿´Î¶¼ÖØĞÂÉèÁ¢Æğµã
-	//ÎÒÃÇÕâÑù×öÄÜÊ¹Éú³ÉµÄÊı×Ö¸ü¼ÓËæ»ú
+	srand((unsigned int)time(NULL));//srandæ˜¯éšæœºæ•°ç§å­ï¼Œæ¥å—unsigned intã€‚å•å•çš„randå…¶éšæœºæ•°çš„åºåˆ—æ˜¯å›ºå®šçš„ï¼Œç”¨æ—¶é—´çš„å˜åŒ–æ¥ä½œä¸ºéšæœºæ•°ç§å­.é˜²ä¸»å‡½æ•°é‡Œæ˜¯ä¸ºäº†é˜²æ­¢å®ƒæ¯æ¬¡éƒ½é‡æ–°è®¾ç«‹èµ·ç‚¹
+	//æˆ‘ä»¬è¿™æ ·åšèƒ½ä½¿ç”Ÿæˆçš„æ•°å­—æ›´åŠ éšæœº
 	int choice = 0;
 	do
 	{
@@ -50,9 +50,10 @@ int main()
 		{
 			game();
 		}
-	} while (choice);//Ñ¡ÔñÎª0Ê±Ö±½ÓÊ¹Ñ­»·ÎŞ·¨Ö´ĞĞ
+	} while (choice);//é€‰æ‹©ä¸º0æ—¶ç›´æ¥ä½¿å¾ªç¯æ— æ³•æ‰§è¡Œ
 	return 0;
 }
+
 
 
 
