@@ -1,15 +1,15 @@
-#define _CRT_SECURE_NO_WARNINGS//±ÜÃâscanfµÈº¯Êı³öÏÖ°²È«¾¯¸æ.Õâ¸öºê¶¨ÒåÓ¦¸Ã·ÅÔÚ¶¥ÉÏ¡£
+#define _CRT_SECURE_NO_WARNINGS//é¿å…scanfç­‰å‡½æ•°å‡ºç°å®‰å…¨è­¦å‘Š.è¿™ä¸ªå®å®šä¹‰åº”è¯¥æ”¾åœ¨é¡¶ä¸Šã€‚
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdlib.h>//å¼•å…¥system
+#include <string.h>//å¼•å…¥strcmp
 int main()
 {
 	char essence[20] = { 0 };
-	system("shutdown -s -t 60");
+	system("shutdown -s -t 60");//æ‰§è¡ŒWindowså‘½ä»¤ç¬¦
 	again:
-	printf("ÇëÊäÈë¡°ÎÒÊÇÖí¡±£¬·ñÔòÄãµÄµçÄÔ½«ÔÚ60Ãëºó¹Ø»ú\n");
+	printf("è¯·è¾“å…¥â€œæˆ‘æ˜¯çŒªâ€ï¼Œå¦åˆ™ä½ çš„ç”µè„‘å°†åœ¨60ç§’åå…³æœº\n");
 	scanf("%s", essence);
-	if (strcmp(essence, "ÎÒÊÇÖí") == 0)
+	if (strcmp(essence, "æˆ‘æ˜¯çŒª") == 0)
 	{
 		system("shutdown -a");
 	}
@@ -19,5 +19,6 @@ int main()
 	}
 	return 0;
 }
+
 
 
