@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS//避免scanf等函数出现安全警告.这个宏定义应该放在顶上。
+#define _CRT_SECURE_NO_WARNINGS//避免scanf等函数出现安全警告
 #include <stdio.h>
 #include <stdlib.h>//引入system
 #include <string.h>//引入strcmp
@@ -19,6 +19,7 @@ int main()
 	}
 	return 0;
 }
+
 
 
 
