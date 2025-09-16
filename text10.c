@@ -1,57 +1,58 @@
-#define _CRT_SECURE_NO_WARNINGS//±ÜÃâscanfµÈº¯Êı³öÏÖ°²È«¾¯¸æ.Õâ¸öºê¶¨ÒåÓ¦¸Ã·ÅÔÚ¶¥ÉÏ¡£
+#define _CRT_SECURE_NO_WARNINGS//é¿å…scanfç­‰å‡½æ•°å‡ºç°å®‰å…¨è­¦å‘Š.è¿™ä¸ªå®å®šä¹‰åº”è¯¥æ”¾åœ¨é¡¶ä¸Šã€‚
 
 
-////[²ÎÊıµ÷»»]
+////[å‚æ•°è°ƒæ¢]
 //#include <stdio.h>
 //
 //void exchange(int* px, int* py)
 //{
-//	int z = *px;//°ÑaµÄÖµ¸øz
-//	*px = *py;//°ÑbµÄÖµ¸øa
-//	*py = z;//°Ñz(a)µÄÖµ¸øb
+//	int z = *px;//æŠŠaçš„å€¼ç»™z
+//	*px = *py;//æŠŠbçš„å€¼ç»™a
+//	*py = z;//æŠŠz(a)çš„å€¼ç»™b
 //}
 //
 //int main()
 //{
-//	int a = 0, b = 0;//Á½¸öÊµ²Î
+//	int a = 0, b = 0;//ä¸¤ä¸ªå®å‚
 //	scanf("%d %d", &a, &b);
-//	printf("%d %d\n", a, b);//Î´µ÷»»Ç°
+//	printf("%d %d\n", a, b);//æœªè°ƒæ¢å‰
 //	exchange(&a, &b);
-//	printf("%d %d\n", a, b);//µ÷»»ºó
+//	printf("%d %d\n", a, b);//è°ƒæ¢å
 //	return 0;
 //}
 
 
-////[strcpyº¯Êı]
+////[strcpyå‡½æ•°]
 //#include <stdio.h>
-//#include <string.h>//µ÷ÓÃstrcpy
+//#include <string.h>//è°ƒç”¨strcpy
 //int main()
 //{
 //	char arr1[20] = { 0 };
 //	char arr2[] = { "I Love China" };
-//	strcpy(arr1, arr2);//½«arr2µÄÄÚÈİcopyµ½arr1ÀïÃæ
+//	strcpy(arr1, arr2);//å°†arr2çš„å†…å®¹copyåˆ°arr1é‡Œé¢
 //	printf("%s\n%s\n", arr1, arr2);
 //	return 0;
 //}
 
 
 
-#include <stdio.h>
+//#include <stdio.h>
 
-void exchange(int x, int y)
-{
-	int z = 0;//¿Õ±äÁ¿
-	z = x;
-	x = y;
-	y = z;
-}
+//void exchange(int x, int y)
+//{
+//	int z = 0;//ç©ºå˜é‡
+//	z = x;
+//	x = y;
+//	y = z;
+//}
 
-int main()
-{
-	int a = 0, b = 0;//Òª½»»»µÄ±äÁ¿
-	scanf("%d %d", &a, &b);
-	printf("%d %d\n", a, b);//¼ÇÂ¼Ô­Ê¼µÄa¡¢bÖµ
-	exchange(a,b);
-	printf("%d %d\n", a, b);//¼ìÑé½»»»³É¹¦Óë·ñ
-	return 0;
-}
+//int main()
+//{
+//	int a = 0, b = 0;//è¦äº¤æ¢çš„å˜é‡
+//	scanf("%d %d", &a, &b);
+//	printf("%d %d\n", a, b);//è®°å½•åŸå§‹çš„aã€bå€¼
+//	exchange(a,b);
+//	printf("%d %d\n", a, b);//æ£€éªŒäº¤æ¢æˆåŠŸä¸å¦
+//	return 0;
+
+//}
