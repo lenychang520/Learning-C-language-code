@@ -65,7 +65,7 @@
 //		fade[left] = text[left];
 //		fade[right] = text[right];
 //		printf("%s\n", fade);
-//		Sleep(1000);//使每次循环输出延缓1000秒
+//		Sleep(1000);//使每次循环输出延缓1秒
 //		system("cls");//每次循环结果清空；
 //	}
 //	return 0;
@@ -101,3 +101,4 @@
 //	return 0;
 //
 //}
+
